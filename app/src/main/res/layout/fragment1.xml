@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F9F9F9">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#DCDCDC"
+            android:text="福州市"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_shape1"
+            android:textColor="#DEDEDE"
+            android:text="联系客服"
+            android:textSize="16sp"
+            android:layout_marginRight="14dp"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <com.youth.banner.Banner
+            android:id="@+id/lunbotu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/zhaobiaoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="招标任务"
+                android:textSize="22dp"
+                android:background="@drawable/button_shape1"
+                android:textColor="#545454"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/xuanshangButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textColor="#545454"
+                android:textSize="22dp"
+                android:background="@drawable/button_shape1"
+                android:text="悬赏任务"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+    </ListView>
+
+
+</LinearLayout>
